@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+# =====================================================================================
+# @alias: blindRebase
+# @dependencies: git
+# @description: Script usado para rodar um rebase cego, aceitando tudo ours ou theirs
+# =====================================================================================
 
 if [[ "$1" != "ours" && "$1" != "theirs" ]]; then
     echo "❌ Erro: Use 'ours' ou 'theirs' como argumento." >&2
